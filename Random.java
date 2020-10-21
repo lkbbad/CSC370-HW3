@@ -11,7 +11,7 @@
       * @return the next action to play.
       */
     public Action getNextMove(Action lastOpponentMove) {
-        int rand = getRandomNumber(1, 5);
+        int rand = getRandomNumber(1, 6);
         if (rand == 1)
             return Action.ROCK;
         else if (rand == 2)
