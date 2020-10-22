@@ -6,16 +6,10 @@ import java.util.*;
   */
   public class RotateBot implements RoShamBot {
 
-    /*  Full History Structure (global variables, accessible to the
-                            current player during each match)
-
-      - element 0 is the number of trials played so far
-      - element i is the action taken on turn i (1 <= i <= trials ) */
-
     int TRIALS = 10000;
     ArrayList<Action> my_history = new ArrayList<Action>();
     
-    /** Rotates choice of action each turn.
+    /** Rotates choice of action each turn: rock-paper-scissors-lizard-spock.
       * 
       * @param lastOpponentMove the action that was played by the opposing 
       *        agent on the last round.
