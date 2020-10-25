@@ -6,7 +6,6 @@ import java.util.*;
   */
   public class RotateBot implements RoShamBot {
 
-    int TRIALS = 10000;
     ArrayList<Action> my_history = new ArrayList<Action>();
     
     /** Rotates choice of action each turn: rock-paper-scissors-lizard-spock.
@@ -17,7 +16,6 @@ import java.util.*;
       * @return the next action to play.
     */
     public Action getNextMove(Action lastOpponentMove) {
-        // HashTable<Action, int> dict = new HashTable<Action, int>
         if (my_history.size() == 0)
             my_history.add(Action.ROCK);
         
