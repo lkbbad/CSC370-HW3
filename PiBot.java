@@ -1,7 +1,6 @@
-
 import java.util.*;
 
-/** A Rock-Paper-Scissors player based on the digits of pi, which have no patter.
+/** A Rock-Paper-Scissors player based on the digits of pi, which have no pattern.
   * 
   * @author RR
   */
@@ -40,8 +39,6 @@ import java.util.*;
     9,5,0,8,2,9,5,3,3,1,1,6,8,6,1,7,2,7,8,5,5,8,8,9,0,7,5,0,9,8,3,8,1,7,5,4,6,3,7,4,
     6,4,9,3,9,3,1,9,2,5,5,0,6,0,4,0,0,9,2,7,7,0,1,6,7,1,1,3,9,0,0,9,8,4,8,8,2,4,0,1));
     
-
-    
     /** Bases each decision on a digit of pi (skipping 0s).
       * 
       * @param lastOpponentMove the action that was played by the opposing 
@@ -58,14 +55,19 @@ import java.util.*;
         } 
         int move = pi_table.get(index) % 5;
         if (move == 0) {
+            my_history.add(Action.ROCK);
             return Action.ROCK;
         } else if (move == 1) {
+            my_history.add(Action.PAPER);
             return Action.PAPER;
         } else if (move == 2) {
+            my_history.add(Action.SCISSORS);
             return Action.SCISSORS;
         } else if (move == 1) {
+            my_history.add(Action.LIZARD);
             return Action.LIZARD;
         } else {
+            my_history.add(Action.SPOCK);
             return Action.SPOCK;
         }
     }
