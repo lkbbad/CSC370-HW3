@@ -49,36 +49,37 @@ import java.util.Random;
         else if (lastOpponentMove.equals(Action.LIZARD)) { lizard_count++; }
         else { spock_count++; }
 
+        int cf;
         if (rock_count == Math.max(rock_count, Math.max(paper_count, Math.max(scissors_count, Math.max(lizard_count, spock_count))))) {
-            int cf = coinFlip();
+            cf = coinFlip();
             if (cf == 0) {
                 return Action.PAPER;
             } else {
                 return Action.SPOCK;
             }
         } else if (paper_count == Math.max(rock_count, Math.max(paper_count, Math.max(scissors_count, Math.max(lizard_count, spock_count))))) {
-            int cf = coinFlip();
+            cf = coinFlip();
             if (cf == 0) {
                 return Action.SCISSORS;
             } else {
                 return Action.LIZARD;
             }
         } else if (scissors_count == Math.max(rock_count, Math.max(paper_count, Math.max(scissors_count, Math.max(lizard_count, spock_count))))) {
-            int cf = coinFlip();
+            cf = coinFlip();
             if (cf == 0) {
                 return Action.ROCK;
             } else {
                 return Action.SPOCK;
             }
         } else if (lizard_count == Math.max(rock_count, Math.max(paper_count, Math.max(scissors_count, Math.max(lizard_count, spock_count))))) {
-            int cf = coinFlip();
+            cf = coinFlip();
             if (cf == 0) {
                 return Action.SCISSORS;
             } else {
                 return Action.ROCK;
             }
         } else {
-            int cf = coinFlip();
+            cf = coinFlip();
             if (cf == 0) {
                 return Action.PAPER;
             } else {
