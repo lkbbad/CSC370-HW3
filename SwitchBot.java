@@ -1,8 +1,20 @@
+import java.util.*;
+
 public class SwitchBot implements RoShamBot {
 
     int TRIALS = 10000;
     ArrayList<Action> my_history = new ArrayList<Action>();
  
+    /** Returns a random number in range.
+     * 
+     * @param min
+     * @param max
+     * @return int
+     */
+    public int getRandomNumber(int min, int max) {
+        return (int) ((Math.random() * (max - min)) + min);
+    }
+
     /** Never repeat the previous pick
       * 
       * @param lastOpponentMove the action that was played by the opponent on
