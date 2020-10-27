@@ -1,7 +1,4 @@
 import java.util.*;
-import java.util.HashMap;
-import java.util.Map.Entry;
-import java.util.Collections;
 
 /** A history-based Rock-Paper-Scissors player.
   * 
