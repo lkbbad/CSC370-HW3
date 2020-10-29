@@ -1,6 +1,10 @@
+/** A copying-based Rock-Paper-Scissors player.
+  * 
+  * @author Lindy Bustabad and Abby Santiago
+  */
 public class CopyBot implements RoShamBot {
  
-    /** do whatever would have beat the opponent last turn
+    /** Play the action that would have beat the opponent last turn.
       * 
       * @param lastOpponentMove the action that was played by the opponent on
       *        the last round (this is disregarded).

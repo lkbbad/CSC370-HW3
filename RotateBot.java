@@ -2,7 +2,7 @@ import java.util.*;
 
 /** A rotation-based Rock-Paper-Scissors player.
   * 
-  * @author RR
+  * @author Lindy Bustabad and Abby Santiago
   */
   public class RotateBot implements RoShamBot {
 

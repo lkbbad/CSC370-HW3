@@ -1,9 +1,8 @@
 import java.util.*;
 import java.util.Random;
-
 /** A frequency-based Rock-Paper-Scissors player, version 2.
   * 
-  * @author RR
+  * @author Lindy Bustabad and Abby Santiago
   */
   public class FreqBot2 implements RoShamBot {
 

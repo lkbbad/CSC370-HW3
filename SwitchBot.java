@@ -1,6 +1,10 @@
 import java.util.*;
 import java.util.Random;
 
+/** A switching-based Rock-Paper-Scissors player.
+  * 
+  * @author Lindy Bustabad and Abby Santiago
+  */
 public class SwitchBot implements RoShamBot {
 
     int TRIALS = 10000;

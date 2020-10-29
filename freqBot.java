@@ -3,7 +3,7 @@ import java.util.Random;
 
 /** A frequency-based Rock-Paper-Scissors player.
   * 
-  * @author RR
+  * @author Lindy Bustabad and Abby Santiago
   */
   public class FreqBot implements RoShamBot {
 

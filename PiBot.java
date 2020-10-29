@@ -2,7 +2,7 @@ import java.util.*;
 
 /** A Rock-Paper-Scissors player based on the digits of pi, which have no pattern.
   * 
-  * @author RR
+  * @author Lindy Bustabad and Abby Santiago
   */
   public class PiBot implements RoShamBot {
     

@@ -3,7 +3,7 @@ import java.util.Random;
 
 /** A history-based Rock-Paper-Scissors player.
   * 
-  * @author RR
+  * @author Lindy Bustabad and Abby Santiago
   */
   public class HistoryBot implements RoShamBot {
 

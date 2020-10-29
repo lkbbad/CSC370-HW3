@@ -3,7 +3,7 @@ import java.util.Random;
 
 /** A pattern-based Rock-Paper-Scissors player.
   * 
-  * @author RR
+  * @author Lindy Bustabad and Abby Santiago
   */
   public class FoxtrotBot implements RoShamBot {
 

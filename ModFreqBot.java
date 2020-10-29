@@ -2,7 +2,7 @@ import java.util.*;
 
 /** A frequency-based Rock-Paper-Scissors player based off the modified freq bot in the paper.
   * 
-  * 
+  * @author Lindy Bustabad and Abby Santiago
   */
   public class ModFreqBot implements RoShamBot {
 
@@ -161,7 +161,7 @@ import java.util.*;
         else if(turn < probRTurn + probPTurn + probSTurn + probLTurn){
             return Action.LIZARD;
         }
-        else{
+        else {
             return Action.SPOCK;
         }
     }

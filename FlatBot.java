@@ -3,7 +3,7 @@ import java.util.Random;
 
 /** A flat distribution-based Rock-Paper-Scissors player.
   * 
-  * @author RR
+  * @author Lindy Bustabad and Abby Santiago
   */
   public class FlatBot implements RoShamBot {
 
