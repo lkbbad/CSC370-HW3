@@ -1,9 +1,11 @@
 import java.util.*;
+import java.util.Random;
 
 public class SwitchBot implements RoShamBot {
 
     int TRIALS = 10000;
     ArrayList<Action> my_history = new ArrayList<Action>();
+    Random rand = new Random();
  
     /** Returns a random number in range.
      * 
@@ -12,7 +14,7 @@ public class SwitchBot implements RoShamBot {
      * @return int
      */
     public int getRandomNumber(int min, int max) {
-        return (int) ((Math.random() * (max - min)) + min);
+        return rand.nextInt((max - min) + 1) + min;
     }
 
     /** Never repeat the previous pick

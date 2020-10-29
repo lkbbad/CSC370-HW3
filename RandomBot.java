@@ -1,9 +1,14 @@
+
+import java.util.Random;
+
 /** A non-equilibrium Rock-Paper-Scissors player.
   * 
   * @author RR
   */
-  public class Random implements RoShamBot {
- 
+  public class RandomBot implements RoShamBot {
+    
+    Random r = new Random();
+
     /** Returns an action at random from the five choices.
       * 
       * @param lastOpponentMove the action that was played by the opponent on
@@ -23,8 +28,14 @@
         else return Action.SPOCK;
     }
 
+    /** Returns a random number in range.
+     * 
+     * @param min
+     * @param max
+     * @return int
+     */
     public int getRandomNumber(int min, int max) {
-        return (int) ((Math.random() * (max - min)) + min);
+        return r.nextInt((max - min) + 1) + min;
     }
     
 }

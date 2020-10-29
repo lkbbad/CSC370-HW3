@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Random;
 
 /** A history-based Rock-Paper-Scissors player.
   * 
@@ -13,6 +14,7 @@ import java.util.*;
     int seqcount = 0;
     String finalmove = new String();
     Action finalaction;
+    Random rand = new Random();
     
     /** Returns Action[] of actions that defeat a given action.
      * 
@@ -78,7 +80,7 @@ import java.util.*;
      * @return int
      */
     public int getRandomNumber(int min, int max) {
-        return (int) ((Math.random() * (max - min)) + min);
+        return rand.nextInt((max - min) + 1) + min;
     }
 
     /** Considers a set window size and parses opponent history to exploit sequence occurrences.
@@ -121,11 +123,9 @@ import java.util.*;
         }
         // Find max value of the scores
         int maxValue = scores[0];
-        int maxIndex = 0;
         for (int i = 1; i < scores.length; i++) {
             if (scores[i] > maxValue) {
                 maxValue = scores[i];
-                maxIndex = i;
             }
         }  
         // Count all of the scores that share the maxValue
@@ -145,11 +145,9 @@ import java.util.*;
             }
             // Find the max value of total occurrences of the ties
             int maxTieValue = tie_breaker_scores[0];
-            int maxTieIndex = 0;
             for (int i = 1; i < tie_breaker_scores.length; i++) {
                 if (tie_breaker_scores[i] > maxTieValue) {
                     maxTieValue = tie_breaker_scores[i];
-                    maxTieIndex = i;
                 }
             } 
             // Count the number of ties in the tie breakers

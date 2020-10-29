@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.Random;
 
 /** A frequency-based Rock-Paper-Scissors player based off the modified freq bot in the paper.
   * 

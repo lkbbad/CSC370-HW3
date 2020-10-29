@@ -1,4 +1,5 @@
 import java.util.*;
+import java.util.Random;
 
 /** A pattern-based Rock-Paper-Scissors player.
   * 
@@ -8,9 +9,16 @@ import java.util.*;
 
     static int turn = 1;
     ArrayList<Integer> my_history = new ArrayList<Integer>();
+    Random rand = new Random();
     
+    /** Returns a random number in range.
+     * 
+     * @param min
+     * @param max
+     * @return int
+     */
     public int getRandomNumber(int min, int max) {
-        return (int) ((Math.random() * (max - min)) + min);
+        return rand.nextInt((max - min) + 1) + min;
     }
 
     /** Choice of action follows set pattern: rand prev+2 rand prev+1 rand prev+0 repeat.
