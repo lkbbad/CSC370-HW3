@@ -5,7 +5,7 @@ import java.util.Random;
   * 
   * @author Lindy Bustabad and Abby Santiago
   */
-  public class SwitchALot implements RoShamBot {
+  public class SwitchALotBot implements RoShamBot {
 
     ArrayList<Action> my_history = new ArrayList<Action>();
     
